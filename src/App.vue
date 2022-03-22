@@ -4,7 +4,7 @@
 
 <template>
   <header>
-    <img alt="Cube" class="logo" src="./assets/Matter.png" width="125" height="125" />
+    <img src="./assets/Matter.png" width="125" height="125"/>
   </header>
 
   <main>
