@@ -5,7 +5,7 @@
     <div class="header">
         <div class="currencyHolder">
             <img src="../assets/Matter.png" style="margin-right:10px;">
-            <div>{{player.matter | numberFormat}}</div>
+            <div>{{}}</div>
         </div>
         <div class="currencyHolder">
             <img src="../assets/Antimatter.png" style="margin-right:10px;">
