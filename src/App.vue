@@ -1,15 +1,10 @@
 <script setup>
+import CurrencyHeader from "./components/currencyHeader.vue";
 
 </script>
 
 <template>
-  <header>
-    <img src="./assets/Matter.png" width="125" height="125"/>
-  </header>
-
-  <main>
-    <h1>Gaming</h1>
-  </main>
+  <CurrencyHeader/>
 </template>
 
 <style>
@@ -20,7 +15,7 @@
   align-self: center;
 }
 #app {
-  max-width: 1280px;
+  justify-content: center;
 }
 
 </style>

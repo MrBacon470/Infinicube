@@ -8,6 +8,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "break_eternity.js": "^1.2.5",
     "vue": "^3.2.31"
   },
   "devDependencies": {
