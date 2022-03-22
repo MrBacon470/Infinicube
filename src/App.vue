@@ -1,15 +1,14 @@
 <script setup>
 import CurrencyHeader from "./components/currencyHeader.vue";
-
 </script>
 
 <template>
-  <CurrencyHeader/>
+  <CurrencyHeader />
 </template>
 
 <style>
-@import './assets/base.css';
-*{
+@import "./assets/base.css";
+* {
   align-items: center;
   align-content: center;
   align-self: center;
@@ -17,5 +16,4 @@ import CurrencyHeader from "./components/currencyHeader.vue";
 #app {
   justify-content: center;
 }
-
 </style>
