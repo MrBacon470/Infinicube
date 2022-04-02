@@ -1,5 +1,5 @@
 import Decimal from "break_eternity.js";
-import { createApp, reactive } from "vue";
+import { createApp, reactive, VueElement } from "vue";
 import App from "./App.vue";
 
 createApp(App).mount("#app");
@@ -14,31 +14,16 @@ function getDefaultObject() {
     currentUpdate: "v0.0.1",
   };
 }
-
-let player = getDefaultObject();
+let player = reactive({matter:D(0),antimatter:D(0),currentUpdate: 'v0.0.1'})
 //saving and loading
 function save() {
   window.localStorage.setItem(storageKey, JSON.stringify(player));
 }
 function load() {
   let savedata = JSON.parse(window.localStorage.getItem(storageKey));
-  if (savedata !== undefined) fixSave(player, savedata);
+  if(savedata !== null && savedata !== undefined) player = savedata
 }
 //fix saves
-function fixSave(main = getDefaultObject(), player) {
-  if (typeof player === "object") {
-    Object.keys(player).forEach((i) => {
-      if (main[i] instanceof Decimal) {
-        main[i] = D(player[i] !== null ? player[i] : main[i]);
-      } else if (typeof main[i] == "object") {
-        fixSave(main[i], player[i]);
-      } else {
-        main[i] = player[i];
-      }
-    });
-    return main;
-  } else return getDefaultObject();
-}
 export function exportSave() {
   save();
   let exportedData = btoa(JSON.stringify(player));
