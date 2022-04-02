@@ -11,7 +11,7 @@ function getDefaultObject() {
   return {
     matter: D(0),
     antimatter: D(0),
-    currentUpdate: "v0.5.1",
+    currentUpdate: "v0.0.1",
   };
 }
 
