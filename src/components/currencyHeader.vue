@@ -7,11 +7,11 @@
   <div class="header">
     <div class="currencyHolder">
       <img src="../assets/Matter.png" style="margin-right: 10px" />
-      <div>{{format(new Decimal(10))}}</div>
+      <div>{{format(new Decimal(10))}} Matter</div>
     </div>
     <div class="currencyHolder">
       <img src="../assets/Antimatter.png" style="margin-right: 10px" />
-      <div>400 Matter</div>
+      <div>{{format(new Decimal(0))}} Matter</div>
     </div>
   </div>
 </template>
