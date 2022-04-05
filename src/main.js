@@ -14,7 +14,7 @@ function getDefaultObject() {
     currentUpdate: "v0.0.1",
   };
 }
-let player = reactive({matter:D(0),antimatter:D(0),currentUpdate: 'v0.0.1'})
+export default player = reactive({matter:D(0),antimatter:D(0),currentUpdate: 'v0.0.1'})
 //saving and loading
 function save() {
   window.localStorage.setItem(storageKey, JSON.stringify(player));

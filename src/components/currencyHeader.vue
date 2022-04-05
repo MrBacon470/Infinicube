@@ -1,13 +1,14 @@
 <script setup>
     import { format } from '../numberFormatting';
     import Decimal from 'break_eternity.js';
+    import * as player from '../main';
 </script>
 
 <template>
   <div class="header">
     <div class="currencyHolder">
       <img src="../assets/Matter.png" style="margin-right: 10px" />
-      <div>{{format(new Decimal(10))}} Matter</div>
+      <div>{{format(player.default.matter)}} Matter</div>
     </div>
     <div class="currencyHolder">
       <img src="../assets/Antimatter.png" style="margin-right: 10px" />
